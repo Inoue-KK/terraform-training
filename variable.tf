@@ -26,3 +26,8 @@ variable "gcp_default_region" {
   default = "us-central1"
 }
 variable "gcp_project_id" {}
+variable "firewall_tags" {
+  default = {
+    firewall-ingress-allow-from-allowed-list = "firewall-ingress-allow-from-allowed-list"
+  }
+}
